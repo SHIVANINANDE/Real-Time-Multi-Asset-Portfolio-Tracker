@@ -1,0 +1,14 @@
+[build]
+  # Set the base directory from which the build command will run
+  base = "portfolio-frontend"
+  
+  # The command to build the React application
+  command = "npm run build"
+  
+  # The folder containing the built files (relative to the base directory)
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
